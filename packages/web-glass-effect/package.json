@@ -1,6 +1,6 @@
 {
   "name": "@creatorem/web-glass-effect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Liquid glass UI components and primitives for React web apps.",
   "license": "MIT",
   "publishConfig": {
@@ -30,7 +30,9 @@
     "test:watch": "jest --config jest.config.cjs --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepublishOnly": "pnpm build && pnpm test"
+    "prepublishOnly": "pnpm build && pnpm test",
+    "publish:local": "npm publish --access public",
+    "publish:ci": "npm publish --access public --provenance"
   },
   "peerDependencies": {
     "react": ">=18.2.0 <20",
